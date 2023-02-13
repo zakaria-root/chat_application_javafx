@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clientserver.LoginController">
+   <children>
+      <Label layoutX="52.0" layoutY="23.0" prefHeight="46.0" prefWidth="371.0" text="MY CHAT APPLICAIRON">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="43.0" layoutY="149.0" onKeyPressed="#onJoinByKeyboard" prefHeight="36.0" prefWidth="381.0" />
+      <Button fx:id="joinButton" layoutX="167.0" layoutY="236.0" mnemonicParsing="false" onAction="#onJoin" prefHeight="36.0" prefWidth="116.0" text="JOIN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="170.0" layoutY="117.0" prefHeight="17.0" prefWidth="116.0" text="Enter your name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
