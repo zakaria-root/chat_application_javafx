@@ -1,4 +1,4 @@
-package com.example.clientserver;
+package com.example.clientserver.servers;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -6,25 +6,25 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ServeurMultithread extends Thread {
+public class ServerMultithread extends Thread {
     private int id;
     private static List<Conversation> conversations = new ArrayList<>();
 
-    ServeurMultithread() {
+    public ServerMultithread() {
         id = 0;
     }
 
     public static void main(String[] args) {
-        new ServeurMultithread().start();
+        new ServerMultithread().start();
     }
 
     @Override
     public void run() {
         String name =null;
         try {
+
             ServerSocket ss = new ServerSocket(1234);
             Socket s = null;
             while (true) {

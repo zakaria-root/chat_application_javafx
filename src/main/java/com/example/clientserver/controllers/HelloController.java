@@ -119,11 +119,18 @@ public class HelloController implements Initializable {
     }
 
     public static void addLabel(String messageFromClient, VBox vbox) {
+
+        if (messageFromClient == null || messageFromClient.isEmpty())
+        return;
+        if (messageFromClient.contains("Enter your name:")){
+            return;
+        }
+
         HBox hBox = new HBox();
         hBox.alignmentProperty().set(javafx.geometry.Pos.CENTER_LEFT);
         hBox.setPadding(new Insets(5, 10, 5, 5));
-        String name = messageFromClient.split(":")[0].trim();
 
+        String name = messageFromClient.split(":")[0].trim();
         Text textName = new Text("@"+name + " ");
 
         TextFlow textFlowName = new TextFlow(textName);

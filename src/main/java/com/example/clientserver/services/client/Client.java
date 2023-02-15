@@ -1,5 +1,6 @@
-package com.example.clientserver;
+package com.example.clientserver.client;
 
+import com.example.clientserver.controllers.HelloController;
 import javafx.scene.layout.VBox;
 
 import java.io.*;
