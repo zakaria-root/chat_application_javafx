@@ -1,5 +1,7 @@
-package com.example.clientserver;
+package com.example.clientserver.controllers;
 
+import com.example.clientserver.services.client.Client;
+import com.example.clientserver.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +15,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class LoginController {
-    static  Client client;
+    static Client client;
     @FXML
     private Button joinButton;
 

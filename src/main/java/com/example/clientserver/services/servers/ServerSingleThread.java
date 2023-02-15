@@ -1,4 +1,4 @@
-package com.example.clientserver.servers;
+package com.example.clientserver.services.servers;
 
 import java.io.IOException;
         import java.net.InetSocketAddress;

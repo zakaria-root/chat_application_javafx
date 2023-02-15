@@ -22,7 +22,8 @@ Currently in Development.
 - [x] Username Selection
 - [x] MOTD on Connect
 - [x] External CSS
-- [x] Server GUI
+- [x] Server GUI Multi-Threaded
+- [x] Server GUI Single-Threaded
 - [x] Time ⌚ of the message
 - [x] join notification
 
